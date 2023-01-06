@@ -1,4 +1,4 @@
-### MVC(Model-View-Controller);
+## MVC(Model-View-Controller);
 MVC, model-view-controller anlamına gelir. MVC, iyi tasarlanmış, test edilebilir ve bakımı kolay uygulamalar geliştirmeye yönelik bir kalıptır. Bu yazıda denetleyici eklemeyi öğreneceksiniz.
 ASP.NET MVC çerçevesi, MVC tabanlı Web uygulamaları oluşturmak için ASP.NET Web Formları modeline bir alternatif sağlar. 
 Model verileri temsil eder. Görünüm, Kullanıcı Arayüzüdür. Denetleyici, istek işleyicisidir. 
@@ -9,7 +9,7 @@ Model verileri temsil eder. Görünüm, Kullanıcı Arayüzüdür. Denetleyici, 
 
 ![mvc](/images/mvc.jpg) ![mvc](/images/mvc-user.jpg)
 
-## N Katmanlı Mimari(N Tier Arc.);
+### N Katmanlı Mimari(N Tier Arc.);
 * Kod tekrarını önlemek
 * Dry(Don’t Repeat Yourself)
 * Projeye olan hakimiyet artar
@@ -27,16 +27,25 @@ Model verileri temsil eder. Görünüm, Kullanıcı Arayüzüdür. Denetleyici, 
 ![mvc](/images/bl.jpg)
 ![mvc](/images/bl1.jpg)
 
-## FluentValidation
+### FluentValidation
 FluentValidation bir veri doğrulama kütüphanesidir. FluentValidation ve benzeri ürünlerin kullanılması, verilerin doğru şekilde yani verilerin oluştururken konulmuş kısıtlamaları sağlayarak kurallara uyumlu halde olmasını ve kullanıcı ya da sistem kaynaklı hataların oluşmasını engeller.
 
-## CRUD Operations;
+### CRUD Operations;
 * Create
 * Read
 * Update
 * Delete
 
-## Entity Framework mimarisinde temelde üç adet yaklaşım;
+{
+        void Insert(T t);
+        void Delete(T t);
+        void Updete(T t);
+        
+        List<T> GetListAll();
+        T GetByID(int id);
+}
+
+### Entity Framework mimarisinde temelde üç adet yaklaşım;
 1. Code First
 2. Database First
 3. Model First
@@ -49,10 +58,10 @@ Attributes;
 1. Predefined Attributes
 2. Custom Attributes
 
-## Language-Integrated Query(LINQ);
+### Language-Integrated Query(LINQ);
 Sorgu yeteneklerinin doğrudan C# diline entegrasyonuna dayalı bir dizi teknolojinin adıdır.
 
-## API(Application Programming Interface);
+### API(Application Programming Interface);
 Bilgisayar programcılığında, bir uygulama programlama arabirimi (API), yazılım ve uygulamalar oluşturmak için bir dizi alt program tanımı, protokolü ve aracıdır. 
 Uygulama programlama arayüzü, bir yazılımın başka bir yazılımda tanımlanmış işlevlerini kullanabilmesi için oluşturulmuş bir tanım bütünüdür. API; web uygulaması, işletim sistemi, veritabanı, donanımlar yahut yazılım kütüphanesi için kullanılabilir.
 
@@ -95,7 +104,6 @@ Bu ilke, “bir sınıfın değişmek için tek bir nedeni olması gerektiğini�
 2.Open/Closed Principle:
 Bu ilke, "yazılım varlıklarının (sınıflar, modüller, işlevler, vb.) genişlemeye açık, ancak değişikliğe kapalı olması gerektiğini" belirtir; bu, bir sınıf davranışını değiştirmeden genişletebilmeniz gerektiği anlamına gelir.
 
-
 3.Liskov’s Substitution Principle:
 İlke 1987'de Barbara Liskov tarafından tanıtıldı ve bu ilkeye göre "Türetilmiş veya alt sınıflar, temel veya ebeveyn sınıflarının yerine geçmelidir". 
 Bu ilke, bir ebeveyn sınıfının çocuğu olan herhangi bir sınıfın, herhangi bir beklenmedik davranış olmaksızın ebeveyni yerine kullanılabilir olmasını sağlar. 
@@ -107,8 +115,8 @@ Tek bir genel arayüz yerine birçok client arayüzünü tercih etmeli ve her ar
 5.Dependency Inversion Principle:
 Bu ilkenin ana amacı, bağımlılıkları ayrıştırmaktır, böylece A sınıfı değişirse, B sınıfının değişiklikleri umursaması veya bilmesi gerekmez.
 
-•	Yüksek seviyeli modüller/sınıflar, düşük seviyeli modüllere/sınıflara bağlı olmamalıdır. Her ikisi de soyutlamalara bağlı olmalıdır.
-•	Soyutlamalar ayrıntılara bağlı olmamalıdır. Detaylar soyutlamalara bağlı olmalıdır. 
+Yüksek seviyeli modüller/sınıflar, düşük seviyeli modüllere/sınıflara bağlı olmamalıdır. Her ikisi de soyutlamalara bağlı olmalıdır.
+Soyutlamalar ayrıntılara bağlı olmamalıdır. Detaylar soyutlamalara bağlı olmalıdır. 
 
 Örneğin;
 Bir TV uzaktan kumanda pilinin gerçek hayattaki örneğini düşünebilirsiniz. Uzaktan kumandanızın bir pile ihtiyacı vardır ancak pil markasına bağlı değildir.
