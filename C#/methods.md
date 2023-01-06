@@ -69,6 +69,7 @@ Method overloading can be done by changing:
 * The Order of the parameters of methods.
 
 Out ve Ref Parametre Kullanımı
+
 Out anahtar kelimesi ref anahtar kelimesi ile aynı işi yapıyor diyebiliriz. Arada sadece birkaç fark var.
 
 Out Kullanımının Özellikleri:
@@ -86,6 +87,14 @@ public int Toplam (int a, int b,  out int toplam)
 {
     toplam = a+b;
     return toplam;
+}
+```
+
+int.TryParse Method:
+```
+bool successfullyParsed = int.TryParse(str, out ignoreMe);
+if (successfullyParsed){
+    // ...
 }
 ```
 
@@ -118,10 +127,13 @@ bool isEven = deger.IsEvenNumber();
 ```
 
 NOT: Extension Methods allow an existing type to be extended with new methods without changing the definition of the original. It allows you to add functionality to a type that you may not be able to inherit (because it's sealed) or you don't have the source code.
+
 Rekürsif(Yinelemeli) Metot Kullanımı
+
 Rekürsif metotlar ilk öğrenildiğinde içselleştirilmesi ve kullanılması zor metotlardır. Ama yazılımın ilerleyen yıllarında kullanımı oturur ve bir çok soruna rekürsif metotları kullanarak çözüm getirebilirsiniz. O nedenle acele etmemek gerek :)
 
 Çok sık olmasa da bazen fonksiyonun kendi kendini çağırmasına ihtiyaç duyarız. For döngüsü karmaşık bir kod yazarak da bu ihtiyacı karşılamak mümkün. Rekürsif fonksiyonlar ise tam da bu ihtiyaç için ortaya koyulmuştur.
+
 Rekürsif fonksiyon kendi kendini çağırma yeteneğine sahip olduğu için kullanırken çok dikkatli olmak gerek. En büyük sorunlardan biri sonsuz döngüye neden olmalı. Bu da System.StackOverflowException olarak bilinen hataya neden olur. Yani belleğin stack bölgesinde bu fonksiyon çağrımı için ayrılan alan tükenmiştir. Yinelemeli olarak yaptığınız işe bağlı olarak risk de artar.
 
 Aşağıdaki örneği inceleyerek ve hatta kağıt üzerinde yazarak yinelemeli fonksiyonların kullanımını daha iyi oturtabilirsiniz.
