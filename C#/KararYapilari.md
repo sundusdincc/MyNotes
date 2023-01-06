@@ -45,8 +45,9 @@ switch(degisken)
 }
 ```
 Yukarıdaki örnekte, değişken adıyla girdi alınan veri kontrol edilir. Eğer değişken sabit1'e eşit ise bazı komutlar çalıştırılır ve switch ifadesi sonlandırılır.
-Bir koşul sağlandığında gerekli komutlar çalıştırıldıktan sonra break; ifadesi ile kontrol sonlandırılır. Bu demek oluyor ki her case ifadesi birbirinden farklı olmalıdır. Ve bir switch-case ifadesinde yalnızca bir case çalışmalıdır.
-Peki kontrol edilen değişken hiçbir sabit ifadeye eşit değilse ne olacak ? Tam da bu noktada default case'ini görüyoruz. Bu durumda kod default kısmında belirtilen kod bloğunu çalıştırır.
+Bir koşul sağlandığında gerekli komutlar çalıştırıldıktan sonra **break**; ifadesi ile kontrol sonlandırılır. Bu demek oluyor ki her case ifadesi birbirinden farklı olmalıdır. Ve bir switch-case ifadesinde yalnızca bir case çalışmalıdır.
+Peki kontrol edilen **değişken** hiçbir sabit ifadeye eşit değilse ne olacak ? Tam da bu noktada default case'ini görüyoruz. Bu durumda kod **default** kısmında belirtilen kod bloğunu çalıştırır.
+
 Switch-Case ifadelerinde dikkat edilmesi gereken durumlar aşağıdaki gibidir:
 *	Case ifadelerinin sırası önemli değildir.
 *	Bilinenin aksine default ifadesi en son yazılmak zorunda değildir.
