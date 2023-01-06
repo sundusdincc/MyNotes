@@ -128,3 +128,4 @@ Bir TV uzaktan kumanda pilinin gerçek hayattaki örneğini düşünebilirsiniz.
 
 
 
+
