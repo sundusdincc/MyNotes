@@ -74,8 +74,8 @@ Veritabanımıza herhangi bir ara katman veya Veri Erişim Katmanı (DAL) kullan
 
 ## Razor syntax;
 Razor syntax, sunucu tabanlı kodu bir web sayfasına gömmek için basit bir programlama sözdizimidir. Razor sözdizimini kullanan bir web sayfasında iki tür içerik vardır: istemci içeriği ve sunucu kodu.
-{
 
+```
     @if(IsPost) {
     // This line has all content between matched <p> tags.
     <p>Hello, the time is @DateTime.Now and this page is a postback!</p>
@@ -83,7 +83,7 @@ Razor syntax, sunucu tabanlı kodu bir web sayfasına gömmek için basit bir pr
     // All content between matched tags, followed by server code.
     <p>Hello <em>stranger</em>, today is: <br /> </p>  @DateTime.Now
      }
-
+```
 
 
 
