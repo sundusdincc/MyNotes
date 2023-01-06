@@ -85,9 +85,6 @@ Razor syntax, sunucu tabanlı kodu bir web sayfasına gömmek için basit bir pr
      }
 ```
 
-
-
-
 ## Generic Repository;
 * CRUD operasyonları
 * Her bir crud operasyonuna ait bir metot tanımlanacak.
