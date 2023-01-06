@@ -37,12 +37,11 @@ FluentValidation bir veri doğrulama kütüphanesidir. FluentValidation ve benze
 * Delete
 
 {
-        void Insert(T t);
-        void Delete(T t);
-        void Updete(T t);
-        
-        List<T> GetListAll();
-        T GetByID(int id);
+void Insert(T t);
+void Delete(T t);
+void Updete(T t);
+List<T> GetListAll();
+T GetByID(int id);
 }
 
 ### Entity Framework mimarisinde temelde üç adet yaklaşım;
@@ -81,7 +80,7 @@ Razor syntax, sunucu tabanlı kodu bir web sayfasına gömmek için basit bir pr
     // All content between matched tags, followed by server code.
     <p>Hello <em>stranger</em>, today is: <br /> </p>  @DateTime.Now
      }
-}
+
 
 
 
