@@ -37,7 +37,6 @@ FluentValidation bir veri doğrulama kütüphanesidir. FluentValidation ve benze
 * Delete
 
 {
-
         void Insert(T t);
         void Delete(T t);
         void Updete(T t);
@@ -78,12 +77,13 @@ Razor syntax, sunucu tabanlı kodu bir web sayfasına gömmek için basit bir pr
     @if(IsPost) {
     // This line has all content between matched <p> tags.
     <p>Hello, the time is @DateTime.Now and this page is a postback!</p>
-} else {
+     } else {
     // All content between matched tags, followed by server code.
     <p>Hello <em>stranger</em>, today is: <br /> </p>  @DateTime.Now
+     }
 }
 
-}
+
 
 
 ## Generic Repository;
