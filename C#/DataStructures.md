@@ -1,5 +1,4 @@
 ## Veri Yapıları ve Algoritmalar
-* Algoritma
 * Binary Numbers 
 Bit, Bytes (8Bit=1 Byte)
 8 bit=2^8=256 sembol
@@ -41,15 +40,15 @@ Big O Notation: Argüman belirli bir değere veya sonsuzluğa yöneldiğinde bir
 
 Sorting (Sıralama) Algoritmaları:
 Sorting, bir eleman dizisini, belirli sıralama kurallarına göre sıralama yapar.
--Insertion Sort-n2
--Merge Sort-nlogn
--Quick Sort-pivot
+* Insertion Sort-n2
+* Merge Sort-nlogn
+* Quick Sort-pivot
 
 Searching (Arama) Algoritmaları:
 Arama algoritmaları ise istediğim özellikteki verinin elimdeki veri setlerinde aranıp, bulunup getirilmesi demek.
--Linear Search: Tek tek elemanları dolandıktan sonra istediğim elemanın olup olmadığına bakmaktır.
--Binary Search: low-mid-high
--Binary Search Tree 
+* Linear Search: Tek tek elemanları dolandıktan sonra istediğim elemanın olup olmadığına bakmaktır.
+* Binary Search: low-mid-high
+* Binary Search Tree 
 
 
 ### Variables
