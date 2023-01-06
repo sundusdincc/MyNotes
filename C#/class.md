@@ -36,11 +36,22 @@ Kurucu metot tanımlarken dikkat edilmesi gereken noktalar ise şu şekildedir:
 2.	Public olarak bildirilmeleri gerekir.
 3.	Geri dönüş değerleri yoktur.
 
-Kurucu metotların imzasını değiştirerek overload edebiliriz yani aşırı yükleyebiliriz. Metotları anlatırken aşırı yüklemeden bahsetmiştik.
+Kurucu metotların imzasını değiştirerek **overload** edebiliriz yani aşırı yükleyebiliriz. Metotları anlatırken aşırı yüklemeden bahsetmiştik.
 
-Varsayılan Kurucu Metot 
-Her sınıfın biz tanımlamasakta bir tane kurucu metotu vardır. Buna varsayılan kurucu metot (default constructor) denir.
-Default constructor'ın görevi sınıfın içerindeki özelliklere ilk değer ataması yapılmadığında onların default değerlerini set etmektir. Şöyle düşünebilirsiniz; sınıf içerisinde string veri tipinde bir özellik varsa ve siz ilk değer atamasını yapmazsanız varsayılan kurucu onun atamasını arka planda null olarak yapar. Aynı integer tipinde bir özelliğin ilk değer atamasını 0 olarak yapar.
+Varsayılan Kurucu Metot ;
+
+Her sınıfın biz tanımlamasakta bir tane kurucu metotu vardır. Buna **varsayılan kurucu metot (default constructor)** denir.
+Default constructor'ın görevi sınıfın içerindeki özelliklere ilk değer ataması yapılmadığında onların default değerlerini set etmektir. Şöyle düşünebilirsiniz; sınıf içerisinde string veri tipinde bir özellik varsa ve siz ilk değer atamasını yapmazsanız varsayılan kurucu onun atamasını arka planda **null** olarak yapar. Aynı integer tipinde bir özelliğin ilk değer atamasını 0 olarak yapar.
+
+![constructor](/images/constructor.jpg)
+![constructor](/images/constructor-1.jpg)
+
+Types of Constructor:
+1.	Default Constructor
+2.	Parameterized Constructor
+3.	Copy Constructor
+4.	Private Constructor
+5.	Static Constructor
 
 Örnek;
 ```
@@ -57,6 +68,7 @@ class Geek {
 
 ### Encapsulation ve Property Kavramı  
 Encapsulation Kavramı ?
+
 C#'ın %100 nesne yönelimli bir dil olduğundan bahsetmiştik. Encapsulation yani Kapsülleme kavramı bir özeliği başka sınıflardan saklamak ya da korumaktır.
 Örneğin siz bir propery yani özellik tanımı yaptınız ve diğer sınıflar içerisinden erişilsin ama sadece okumak için erişilsin değeri dışarıdan değiştirilemesin istiyorsunuz. Bunu kapsülleme yaparak sağlayabilirsiniz. Kapsülleme işlemini ise property leri kullanarak yapabilirsiniz.
 
@@ -94,6 +106,11 @@ class Person
     }
 }
 ```
+NOT;
+* Teknik olarak kapsüllemede, bir sınıfın değişkenleri veya verileri diğer herhangi bir sınıftan gizlenir ve yalnızca kendi sınıfının içinde tanımlandıkları herhangi bir üye işlevi aracılığıyla erişilebilir.
+* Kapsüllemede olduğu gibi, bir sınıftaki veriler diğer sınıflardan gizlenir, bu nedenle veri gizleme olarak da bilinir.
+* Kapsülleme şu şekilde gerçekleştirilebilir: Sınıftaki tüm değişkenleri özel olarak bildirmek ve değişkenlerin değerlerini ayarlamak ve almak için sınıfta C# Özelliklerini kullanmak.
+
 
 ### Static Üyeler
 Bir sınıfın static olamayan üyelerine nesneler aracılığıyla erişirken static olan metotlara ve özelliklere ise nesne oluşturmadan o sınıfın ismi aracılığıyla erişiriz.
@@ -131,11 +148,12 @@ class Program
 ```
 Yukarıda hem static hemde static olmayan sınıf üyesine sahip bir sınıf tanımı ve program içerisinden kullanımı görüyorsunuz. Static olmayan üyeler nesne bazında yaratılırken static sınıf üyeleri uygulama çalıştığı sürece kendilerine atanan veriyi tutarlar. Yani yukarıdaki örnek için konuşursak, "Isim" ve "Soyisim" her nesne yaratıldığında başlangıç değeri olarak null alır, ataması yapıldığındaysa nesne bazında değerini tutar. Ama "Ogrenci Sayısı" field'ı program boyunca nesne yaratıldıkça öğrenci sayısının değerini 1 arttırarak bu veriyi korur.
 
-Yukarıdaki örnekte de görebileceğiniz gibi bir özelliği static yapmak için geri dönüş tipi ya da veri tipinden önce erişim belirleyiciden sonra "static" anahtar kelimesini koymanız yeterlidir.
+Yukarıdaki örnekte de görebileceğiniz gibi bir özelliği static yapmak için geri dönüş tipi ya da veri tipinden önce erişim belirleyiciden sonra **"static"** anahtar kelimesini koymanız yeterlidir.
 
 Normal metotlar gibi kurucu metotları da static olarak tanımlayabiliriz. Sınıfın static üyelerinin başlangıç değerlerini static kurucular aracılığıyla yapabiliriz. Parametre almazlar ve erişim belirleyicileri yoktur.
 
 Static Sınıflar
+
 Metotlar ve özellikler gibi sınıflar da static anahtar kelimesi ile oluşturulabilirler. Yukarıdaki örnekte de görebileceğiniz üzere normal sınıflar içerisinde static metotlar ve üyeler kullanabiliriz. Peki o halde neden sınıfları static yapma ihtiyacımız olsun? Buna okunabilirliği arttırmak için diyebiliriz.
 Bir sınıfın tüm üyeleri static ise sınıfı da static yapmak kullanımı kolaylaştıran bir yaklaşım olur.
 
