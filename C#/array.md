@@ -90,3 +90,4 @@ Array.Resize<int>(ref sayiDizisi,3);
 ```
 Yukarıdaki örnekte başlangıçta 6 elemanlı olan sayiDizisi Resize metodu ile 3 elemanlı hale getirildi. sondaki 3 eleman kırpıldı. Artık dizi şu şekilde: {1,3,4}
 
+
