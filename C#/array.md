@@ -77,6 +77,7 @@ Array.IndexOf(sayiDizisi,7)
 Array.Resize
 ```
 Dizileri yeniden boyutlandırmak için kullanılır.
+
 ```
 int[] sayiDizisi = {1,3,4,9,8,7};
 Array.Resize<int>(ref sayiDizisi,12);

@@ -41,7 +41,7 @@ for (int i = 1; i <= 10; i++)
 Yukarıdaki örnekte i çift sayıya eşit olduğunda döngünün o anki iterasyon sonlanacaktır. Bu durumda console'a 1 ile 10 arasındaki tek sayılar yazdırılacaktır.
 
 ### While ve ForEach Döngüleri 
-While
+While;
 Koşullar sağlandıkça komut satırlarının çalıştırılmasını sağlar. For döngüsünden farklı olarak iterasyon sayısı belli değildir.
 ```
 int sayac = 1;
@@ -52,7 +52,8 @@ while (sayac <= 5)
 }
 ```
 Yukarıdaki örnekte bir while döngüsü görüyoruz. sayac başlangıçta 1 olarak verilmiş. Ve sayaç 5 den küçük veya 5'e eşit olduğu sürece console'a sayacın değerini yazdıracak. Ve her döngü sonunda sayacın değerini bir arttıracak.
-Foreach
+
+Foreach;
 Foreach döngüsü diziler ve koleksiyonlarla döngüsel işlemler yapmak için kullanılır. Yapısı while ve for döngüsünden biraz farklıdır. Döngünün ne kadar devam edeceğini kullanılan dizi veya koleksiyonun eleman sayısı belirler. Her bir elaman için bir iterasyon gerçekleşir.
 Yazım şekli aşağıdaki gibidir:
 ```
@@ -73,12 +74,15 @@ foreach(int i in SayiDizisi)
 ```
 NOT: 
 Döngüler temel olarak iki kategoriye ayrılır:
+
 Giriş Kontrollü Döngüler: Döngü gövdesinin başlangıcında test edilecek koşulun mevcut olduğu döngüler, Giriş Kontrollü Döngüler olarak bilinir. while döngüsü ve for döngüsü giriş kontrollü döngülerdir.
 * while loop
 * for loop 
+
 Çıkış Kontrollü Döngüler: Döngü gövdesinin sonunda test koşulunun bulunduğu döngüler, Çıkış Kontrollü Döngüler olarak adlandırılır. do-while çıkış kontrollü bir döngüdür.
 Çıkış Kontrollü Döngülerde, döngü gövdesi sonunda test koşulu bulunduğundan döngü gövdesi en az bir kez değerlendirilecektir.
 * do-while loop
 
 Diğer: Infinite Loops, Nested Loops 
+
 NOT: Jump Statements (Break, Continue, Goto, Return and Throw) 
