@@ -37,6 +37,7 @@ FluentValidation bir veri doğrulama kütüphanesidir. FluentValidation ve benze
 * Delete
 
 {
+
         void Insert(T t);
         void Delete(T t);
         void Updete(T t);
@@ -72,14 +73,18 @@ Veritabanımıza herhangi bir ara katman veya Veri Erişim Katmanı (DAL) kullan
 
 ## Razor syntax;
 Razor syntax, sunucu tabanlı kodu bir web sayfasına gömmek için basit bir programlama sözdizimidir. Razor sözdizimini kullanan bir web sayfasında iki tür içerik vardır: istemci içeriği ve sunucu kodu.
+{
 
-@if(IsPost) {
+    @if(IsPost) {
     // This line has all content between matched <p> tags.
     <p>Hello, the time is @DateTime.Now and this page is a postback!</p>
 } else {
     // All content between matched tags, followed by server code.
     <p>Hello <em>stranger</em>, today is: <br /> </p>  @DateTime.Now
 }
+
+}
+
 
 ## Generic Repository;
 * CRUD operasyonları
