@@ -121,13 +121,13 @@ Types of Inheritance:
 * Multiple Inheritance
 
 Important Points: 
-•	C#'ta kalıtıma üç tür katılabilir: Class, Struct ve Interface.
-•	Bir sınıf yalnızca tek bir sınıfı miras alabilir. Birden fazla sınıftan miras alamaz.
-•	Bir sınıf bir yapıdan miras alamaz.
-•	Bir sınıf, bir veya daha fazla arayüzü devralabilir (uygulayabilir).
-•	Bir Yapı, bir veya daha fazla arabirimden miras alabilir. Ancak, başka bir yapıdan veya sınıftan miras alamaz.
-•	Bir arabirim, bir veya daha fazla arabirimden miras alabilir, ancak bir sınıftan veya yapıdan miras alamaz.
-•	Yapıcılar veya yıkıcılar miras alınamaz.
+*	C#'ta kalıtıma üç tür katılabilir: Class, Struct ve Interface.
+*	Bir sınıf yalnızca tek bir sınıfı miras alabilir. Birden fazla sınıftan miras alamaz.
+*	Bir sınıf bir yapıdan miras alamaz.
+*	Bir sınıf, bir veya daha fazla arayüzü devralabilir (uygulayabilir).
+*	Bir Yapı, bir veya daha fazla arabirimden miras alabilir. Ancak, başka bir yapıdan veya sınıftan miras alamaz.
+*	Bir arabirim, bir veya daha fazla arabirimden miras alabilir, ancak bir sınıftan veya yapıdan miras alamaz.
+*	Yapıcılar veya yıkıcılar miras alınamaz.
 
 Not:
 Super Class: Özellikleri miras alınan sınıf, süper sınıf (veya bir temel sınıf veya bir üst sınıf) olarak bilinir.
@@ -161,6 +161,7 @@ Not:
 Virtual: Üst sınıfta geriye dönüş tipinden önce kullanılır ve metodun alt sınıflarda override edilmesine izin verir.
 * Override: Alt sınıfta geriye dönüş tipinden önce yazılır. Üst sınıftaki metodun biçimini değiştirmek istediğimizde kullanırız.
 
+Örnek;
 ```
 1.	public class X  
 2.	{  
@@ -180,6 +181,8 @@ Virtual: Üst sınıfta geriye dönüş tipinden önce kullanılır ve metodun a
 *	Mühürlü sınıf, bir sınıfın miras alınmasını durdurmak için kullanılır. Ondan herhangi bir sınıf türetemez veya genişletemezsiniz.
 *	Başka hiçbir sınıfın onu devirip kendi yöntemini uygulayamaması için Sealed method uygulanır.
 *	Mühürlü sınıfın asıl amacı, kullanıcıdan kalıtım niteliğini geri çekmektir, böylece mühürlü bir sınıftan bir sınıf elde edemezler. Mühürlü sınıflar, statik üyeleri olan bir sınıfınız olduğunda en iyi şekilde kullanılır.
+
+Örnek;
 ```
 •	public class Y : X  
 •	{  
