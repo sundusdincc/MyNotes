@@ -25,6 +25,7 @@ Koleksiyonlar verilerini object tipinde tutuyor demiştik. Object de bir referan
 NOT:
 * Deger tipleri: stack
 * Referans tipleri: heap
+
 ![collections](/images/collections.jpg)
 
 ### Generic Koleksiyonlar 
@@ -98,11 +99,4 @@ ArrayList list = new ArrayList();
 list.Add(i);          /* boxing   */
 int j = (int)list[0]; /* unboxing */
 ```
-
-**Non-generic**           **Generic**
-ArrayList     ------------->List
-HashTable     ------------->Dictionary
-SortedList    ------------->SortedList  
-Stack         ------------->Stack
-Queue         ------------->Queue
 
