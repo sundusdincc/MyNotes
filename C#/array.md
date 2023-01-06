@@ -71,8 +71,13 @@ Verilen dizinin verilen elemanının indexini getirir. Eğer dizi içerisinde el
 Örnek:
 ```
 Array.IndexOf(sayiDizisi,7)
+```
+
+```
 Array.Resize
+```
 Dizileri yeniden boyutlandırmak için kullanılır.
+```
 int[] sayiDizisi = {1,3,4,9,8,7};
 Array.Resize<int>(ref sayiDizisi,12);
 sayiDizisi[6] = 10;
