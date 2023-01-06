@@ -35,6 +35,8 @@ FluentValidation bir veri doğrulama kütüphanesidir. FluentValidation ve benze
 * Read
 * Update
 * Delete
+
+'''
 {
      void Insert(T t);
      void Delete(T t);
@@ -42,6 +44,7 @@ FluentValidation bir veri doğrulama kütüphanesidir. FluentValidation ve benze
      List<T> GetListAll();
      T GetByID(int id);
 }
+'''
 
 
 ### Entity Framework mimarisinde temelde üç adet yaklaşım;
