@@ -59,9 +59,14 @@ Array.Reverse
 ```
 Dizinin ortasını belirleyerek elemanlarını aynalar gibi düşünebilirsiniz. Yani dizinin ilk elemanı ile son elemanını yer değiştirir.
 
-Örnek: Array.Reverse(sayiDizisi);
+Örnek:
+```
+Array.Reverse(sayiDizisi);
+```
 sayiDizisi elemanlarını {1,3,4,9,8,7} olarak düşünürsek; Reverse metodu uygulandığında dizi şöyle olur : {7,8,9,4,3,1}
+```
 Array.IndexOf
+```
 Verilen dizinin verilen elemanının indexini getirir. Eğer dizi içerisinde elemanı bulamazsa -1 döner.
 Örnek:
 ```
