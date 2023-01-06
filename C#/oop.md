@@ -9,7 +9,7 @@ Günümüzde C# ile birlikte bir çok dil nesne yönelimli programlama yani OOP 
 2.	Polymorphism (Çok Biçimcilik)
 3.	Inheritance (Kalıtım)
 
-## Inheritance  
+### Inheritance  
 Inheritance (Kalıtım)
 Bir sınıfın başka bir üst sınıftan miras almasına kalıtım denir. Miras veren sınıf tüm özelliklerini alt sınıfa aktarmış olur. 
 
@@ -32,7 +32,7 @@ Kuş: Uçmak
 
 Buradaki örnekleri arttırmak mümkün. Yazılımda kalıtım üzerinde çalışırken en önemli olan nokta bu gruplamayı doğru yapabilmektir.
 
-## Polymorphism ve Sealed Class  
+### Polymorphism ve Sealed Class  
 Polymorphism (Çok Biçimcilik)
 Çok biçimcilik ile birlikte hayatımıza sanal yani virtual metotlar giriyor. Virtual metotlar ile nesne yönelimli programlama ilkesi olan polymorphism'i uygularız. Sanal metotlar kalıtım alınan yani miras veren sınıf içerisinde yazılan ve daha sonra alt sınıflarda yeniden yazılabilen metotlardır. Bunu da virtual ve override anahtar kelimeleri sağlar.
 
@@ -42,8 +42,9 @@ public virtual void UyaranlaraTepki(){
     Console.WriteLine("Canlılar uyaranlara tepki verir.");
 }
 ```
-```
+
 Alt sınıf içerisinde override metot kullanımı:
+```
 public override void UyaranlaraTepki()
 {
     base.UyaranlaraTepki(); // üst sınıftaki komutları çalıştırır.
@@ -51,7 +52,7 @@ public override void UyaranlaraTepki()
 }
 ```
 
-## Interface 
+### Interface 
 Interface (Arayüzler)
 Interface yani arayüzler nesneye dayalı programlamanın önemli özelliklerinden biridir. Sınıfların içermesi gereken metotların imzalarının yer aldığı, özelliklerin tanımlandığı bir taslak gibi düşünebiliriz.
 
@@ -86,7 +87,7 @@ public class DatabaseLogger : ILogger
 }
 ```
 
-## Abstract Class  
+### Abstract Class  
 Abstract class'ları sadece kalıtım için kullanılan sınıflar gibi düşünebilirsiniz. Bazı özellikleri ile sınıflara benzerlerken bazı özellikleriyle arayüzlere benzerler. Abstract sınıfları arayüz ve virtual metotların birleşimi gibi davranış gösterirler.
 
 Kısaca abstract sınıfların özelliklerine bakacak olursak:
